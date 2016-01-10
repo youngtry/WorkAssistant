@@ -12,10 +12,8 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad();
         
-        let button:UIButton = UIButton(type: .ContactAdd);
-        button.frame = CGRectMake(10, 10, 100, 100);
-        button.setTitle("button", forState: UIControlState.Normal);
-        self.view.addSubview(button);
+        
+        
     }
     
     override func didReceiveMemoryWarning() {

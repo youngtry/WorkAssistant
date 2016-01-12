@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F1E7E641C44EE0D006C7901 /* UserHabit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1E7E631C44EE0D006C7901 /* UserHabit.swift */; };
 		8F602C291C32B4AA00297CD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F602C281C32B4AA00297CD8 /* AppDelegate.swift */; };
 		8F602C2B1C32B4AA00297CD8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F602C2A1C32B4AA00297CD8 /* ViewController.swift */; };
 		8F602C2E1C32B4AA00297CD8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F602C2C1C32B4AA00297CD8 /* Main.storyboard */; };
@@ -34,7 +35,30 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		8F03C85A1C3BA98300F5A432 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		8F03C8371C3BA98300F5A432 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		8F03C8391C3BA98300F5A432 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8F03C83B1C3BA98300F5A432 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F03C8461C3BA98300F5A432 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		8F03C8471C3BA98300F5A432 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		8F03C8491C3BA98300F5A432 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		8F03C84B1C3BA98300F5A432 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		8F03C84D1C3BA98300F5A432 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8F03C84F1C3BA98300F5A432 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F1E7E631C44EE0D006C7901 /* UserHabit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserHabit.swift; sourceTree = "<group>"; };
 		8F602C251C32B4AA00297CD8 /* WorkAssitant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkAssitant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F602C281C32B4AA00297CD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8F602C2A1C32B4AA00297CD8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,12 +100,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8F03C8351C3BA98300F5A432 /* WorkAssistant */ = {
+			isa = PBXGroup;
+			children = (
+				8F03C8361C3BA98300F5A432 /* Interface.storyboard */,
+				8F03C8391C3BA98300F5A432 /* Assets.xcassets */,
+				8F03C83B1C3BA98300F5A432 /* Info.plist */,
+			);
+			path = WorkAssistant;
+			sourceTree = "<group>";
+		};
+		8F03C8441C3BA98300F5A432 /* WorkAssistant Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8F03C8471C3BA98300F5A432 /* InterfaceController.swift */,
+				8F03C8491C3BA98300F5A432 /* ExtensionDelegate.swift */,
+				8F03C84B1C3BA98300F5A432 /* NotificationController.swift */,
+				8F03C84D1C3BA98300F5A432 /* Assets.xcassets */,
+				8F03C84F1C3BA98300F5A432 /* Info.plist */,
+				8F03C8451C3BA98300F5A432 /* Supporting Files */,
+			);
+			path = "WorkAssistant Extension";
+			sourceTree = "<group>";
+		};
+		8F03C8451C3BA98300F5A432 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8F03C8461C3BA98300F5A432 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		8F602C1C1C32B4AA00297CD8 = {
 			isa = PBXGroup;
 			children = (
 				8F602C271C32B4AA00297CD8 /* WorkAssitant */,
 				8F602C3C1C32B4AA00297CD8 /* WorkAssitantTests */,
 				8F602C471C32B4AA00297CD8 /* WorkAssitantUITests */,
+				8F03C8351C3BA98300F5A432 /* WorkAssistant */,
+				8F03C8441C3BA98300F5A432 /* WorkAssistant Extension */,
 				8F602C261C32B4AA00297CD8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -106,6 +163,7 @@
 				8F602C311C32B4AA00297CD8 /* LaunchScreen.storyboard */,
 				8F602C341C32B4AA00297CD8 /* Info.plist */,
 				8F602C561C32B68C00297CD8 /* MainViewController.swift */,
+				8F1E7E631C44EE0D006C7901 /* UserHabit.swift */,
 			);
 			path = WorkAssitant;
 			sourceTree = "<group>";
@@ -138,6 +196,7 @@
 				8F602C211C32B4AA00297CD8 /* Sources */,
 				8F602C221C32B4AA00297CD8 /* Frameworks */,
 				8F602C231C32B4AA00297CD8 /* Resources */,
+				8F03C85A1C3BA98300F5A432 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
@@ -260,6 +319,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F602C571C32B68C00297CD8 /* MainViewController.swift in Sources */,
+				8F1E7E641C44EE0D006C7901 /* UserHabit.swift in Sources */,
 				8F602C2B1C32B4AA00297CD8 /* ViewController.swift in Sources */,
 				8F602C291C32B4AA00297CD8 /* AppDelegate.swift in Sources */,
 			);
@@ -297,6 +357,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		8F03C8361C3BA98300F5A432 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8F03C8371C3BA98300F5A432 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
 		8F602C2C1C32B4AA00297CD8 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -405,7 +473,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: 润燕 tian (335C4S4498)";
 				INFOPLIST_FILE = WorkAssitant/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = try.WorkAssitant;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -419,7 +487,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: 润燕 tian (335C4S4498)";
 				INFOPLIST_FILE = WorkAssitant/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = try.WorkAssitant;
 				PRODUCT_NAME = "$(TARGET_NAME)";

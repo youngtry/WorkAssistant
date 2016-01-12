@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Notification - WorkAssistant.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>WorkAssistant.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>WorkAssitant.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -12,6 +22,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>8F03C8331C3BA98300F5A432</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>8F602C241C32B4AA00297CD8</key>
 		<dict>
 			<key>primary</key>
